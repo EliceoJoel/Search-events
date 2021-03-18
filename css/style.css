@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Oxygen', sans-serif;
+   background-color: #E5D5D5;
+   color: #707070;
+}
+
+.container {
+   margin: 0 20%;
+}
+
+header {
+   margin: 3rem;
+   text-align: center;
+}
+
+.main {
+   width: 100%;
+   display: flex;
+}
+
+#form {
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+}
+
+img {
+   width: 100%;
+   height: auto;
+   overflow: auto;
+}
+
+label {
+   margin-bottom: 0.5rem;
+   margin-left: 1rem;
+   font-weight: 800;
+}
+
+.input {
+   margin-bottom: 1rem;
+   border: none;
+   outline: none;
+   padding: 0.7rem 1rem;
+   border-radius: 50px;
+   font-size: medium;
+   color: #707070;
+}
+
+#btn-submit {
+   border: none;
+   padding: 0.8rem;
+   border-radius: 50px;
+   margin-top: 1.5rem;
+   font-size: medium;
+   background-color: #D49494;
+   outline: none;
+   cursor: pointer;
+}
+
+#btn-submit:hover {
+   background-color: #ca7070;
+}
+
+.separate {
+   border: 1px solid #707070;
+   margin: 2rem 0;
+}
+
+.events {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-gap: 1rem;
+}
+
+.event {
+   border: 1px solid #707070;
+   border-radius: 10px;
+}
+
+.image-event {
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.event-information {
+   padding: 1rem;
+}
+
+.event-title {
+   font-weight: 800;
+   text-align: center;
+   font-size: larger;
+}
+
+.link {
+   text-align: center;
+   padding: .5rem;
+}
+
+.event-link {
+   text-decoration: none;
+   color: #ca7070;
+}
+
+.event-description {
+   word-wrap: break-word;
+}
+
+.ticket-btn {
+   width: 100%;
+   margin-top: 1rem;
+   padding: .5rem;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   font-size: medium;
+   background-color: #D49494;
+   cursor: pointer;
+}
+
+.ticket-btn:hover {
+   background-color:#ca7070;
+}
+
+footer {
+   margin-top: 5rem;
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+footer a {
+   margin: 1rem;
+   color: #707070;
+   font-size: larger;
+}
+
+@media (max-width: 1024px){
+   
+   .main{
+      display: block;
+   }
+
+   #form{
+      width: 100%;
+   }
+
+   .image-principal{
+      margin-top: 2rem;
+      text-align: center;
+   }
+
+   .main-image {
+      width: 50%;
+   }
+
+   
+   .events{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   }
+}
+
+@media (max-width: 694px){
+   .main-image{
+      display: none;
+   }
+
+   .container {
+      margin: 0 10%;
+   }
+}
+
+
